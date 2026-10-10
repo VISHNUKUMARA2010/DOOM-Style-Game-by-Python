@@ -18,4 +18,6 @@ class ObjectRenderer:
         self.win_image = self.get_texture('resources/textures/win.png', RES)
 
 
+
+
         
