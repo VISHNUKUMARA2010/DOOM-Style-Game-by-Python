@@ -25,12 +25,12 @@ class Game:
         pg.time.set_timer(self.global_event, 40)
         self.new_game()
 
-    def new_gmae(self):
+    def new_game(self):
         self.map = Map(self)
         self.player = Player(self)
-        self.object_renderer = objectRenderer(self)
-        self.raycasting = RayCasting(self)
-        self.object_handler = objectHandler(self)
+        self.object_renderer = ObjectRenderer(self)
+        self.raycasting = RayCating(self)
+        self.object_handler = ObjectHandler(self)
         self.weapon = Weapon(self)
         self.sound = Sound(self)
         self.pathfinding = PathFinding(self)
@@ -55,7 +55,7 @@ class Game:
     def check_event(self):
         self.global_trigger = False
         for event in pg.event.get():
-            if event.type == pg.QUIT or (event.type == pg.KEYDON and event.key == pg.K_ESCAPE):
+            if event.type == pg.QUIT or (event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE):
                 pg.quit()
                 sys.exit()
             elif event.type == self.global_event:
