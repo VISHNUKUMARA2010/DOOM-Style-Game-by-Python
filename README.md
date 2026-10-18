@@ -61,3 +61,5 @@ PyInstaller puts the finished build in `dist/DoomNightfall/`.
 ## Notes
 
 The game needs the `resources` folder. When you run from source, start it from the project directory. When you use the executable, keep the whole `dist/DoomNightfall` folder together instead of moving only the `.exe` file.
+
+Sorry HackClub for this Ai 
